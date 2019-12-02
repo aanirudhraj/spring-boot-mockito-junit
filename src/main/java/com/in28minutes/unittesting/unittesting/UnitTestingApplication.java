@@ -3,7 +3,10 @@ package com.in28minutes.unittesting.unittesting;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
 @SpringBootApplication
+@EnableSwagger2
 public class UnitTestingApplication {
 
 	public static void main(String[] args) {
