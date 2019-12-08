@@ -28,4 +28,14 @@ public class ItemBusinessService {
 		return items;	
 	}
 	
+	public Item retrieveOne(int id) {
+		Item item = repository.getOne(id);
+		Item ritem = new Item();
+		ritem.setId(item.getId());
+		ritem.setName(item.getName());
+		ritem.setPrice(item.getPrice());
+		return ritem;
+	}
+	
+	
 }

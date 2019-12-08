@@ -4,6 +4,9 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.in28minutes.unittesting.unittesting.business.ItemBusinessService;
@@ -30,6 +33,11 @@ public class ItemController {
 	@GetMapping("/all-items-from-database")
 	public List<Item> retrieveAllItems() {
 		return businessService.retrieveAllItems();
+	}
+	
+	@PostMapping("/get-one/{id}")
+	public Item retrieveOneItem(@PathVariable int id) {
+		return businessService.retrieveOne(id);
 	}
 	
 }

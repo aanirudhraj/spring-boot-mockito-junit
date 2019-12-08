@@ -16,7 +16,7 @@ public class Item {
 	@Transient
 	private int value;
 
-	protected Item() {
+	public Item() {
 		
 	}
 	
@@ -53,5 +53,21 @@ public class Item {
 
 	public String toString() {
 		return String.format("Item[%d, %s, %d, %d]", id, name, price, quantity);
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
 	}
 }
