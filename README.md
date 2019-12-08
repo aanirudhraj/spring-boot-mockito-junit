@@ -1,5 +1,7 @@
 # spring-boot-mockito-junit
-A Spring Boot app from in28minutes tutorial modified to work using Maven.
+A Spring Boot app from in28minutes tutorial modified to work using Maven and fixed issue with app to Run properly. 
+
+Components used : Maven, Spring Boot, Maven, H2 in-memory DB.
 
 # H2 DB console access
 
